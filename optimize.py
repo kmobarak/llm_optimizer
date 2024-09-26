@@ -6,17 +6,14 @@ import os
 from dotenv import load_dotenv
 from concurrent.futures import ThreadPoolExecutor, TimeoutError, as_completed
 
-# Load environment variables
 load_dotenv()
 
-# Fetch API key from environment variable
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# Setup logging
 logging.basicConfig(filename='processing_log.log', level=logging.INFO, 
                     format='%(asctime)s - %(message)s')
 
-# Function to handle each prompt
+# Function to handle each  prompt
 def get_response(prompt, max_runtime=20, retries=3):
     print(f"Sending prompt: {prompt}")  # Debugging line
     for attempt in range(retries):
@@ -55,22 +52,36 @@ def get_response(prompt, max_runtime=20, retries=3):
             return None, None  
 
 
-# Function to process each problem with only the initial prompt
+# Function to process each problem
 def process_problem(problem, max_runtime=35, retries=3):
-    # Initial prompt - Unmodified case
-    initial_prompt = problem['initial_prompt']
+    # Initial prompt
+    initial_prompt = problem['initial_prompt'] + " Please do not show any steps; just provide the final solution."
     initial_response, initial_runtime = get_response(initial_prompt, max_runtime, retries)
     
     # Skip if error in response
     if initial_response is None:
         return None
     
-    # Only return initial response and related information
+    if problem.get('type') == 'logic':
+        modified_prompt = problem['initial_prompt'] + ". Show me your logical steps and reasoning to solve this puzzle. Logic can be tricky, so pay close attention to avoid any traps."
+    else:
+        modified_prompt = problem['initial_prompt'] + "Carefully think through this step-by-step till you reach the end needed answer."
+
+    modified_response, modified_runtime = get_response(modified_prompt, max_runtime, retries)
+    
+    # Skip if error
+    if modified_response is None:
+        return None
+    
+    # Return results as a dictionary
     return {
         "problem_id": problem['id'],
         "initial_prompt": initial_prompt,
         "initial_response": initial_response,
-        "initial_runtime": initial_runtime
+        "initial_runtime": initial_runtime,
+        "modified_prompt": modified_prompt,
+        "modified_response": modified_response,
+        "modified_runtime": modified_runtime
     }
 
 
@@ -91,9 +102,10 @@ def process_batch(batch, batch_number, max_runtime=20, retries=3, max_workers=5)
 
     results.sort(key=lambda x: x['problem_id'])
 
+    
     # Save results
     df = pd.DataFrame(results)
-    df.to_csv(f"random_selects_unmodified{batch_number}.csv", index=False)
+    df.to_csv(f"random_selects_unmodified{14}.csv", index=False)
 
     # Print results
     for result in results:
@@ -101,7 +113,11 @@ def process_batch(batch, batch_number, max_runtime=20, retries=3, max_workers=5)
         print(f"Initial Prompt: {result['initial_prompt']}")
         print(f"Initial Response: {result['initial_response']}")
         print(f"Initial Runtime: {result['initial_runtime']} seconds")
+        print(f"Modified Prompt: {result['modified_prompt']}")
+        print(f"Modified Response: {result['modified_response']}")
+        print(f"Modified Runtime: {result['modified_runtime']} seconds")
         print("\n")
+        
 
 
 # Example batch of problems
@@ -248,3 +264,4 @@ practice.
 
 
 process_batch(batch_14, 14, max_runtime=35, retries=3, max_workers=10)  
+
