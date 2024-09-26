@@ -1,0 +1,342 @@
+problem_id;initial_prompt;initial_response;initial_runtime;modified_prompt;modified_response;modified_runtime
+102;"In einem Büro mit 3 Angestellten sind 4 Telefonate zu erledigen. Wie viele Möglichkeiten gibt es, diese 4 Aufgaben auf die drei Personen zu verteilen?  Please do not show any steps; just provide the final solution.";35 Möglichkeiten;0.8247170448;In einem Büro mit 3 Angestellten sind 4 Telefonate zu erledigen. Wie viele Möglichkeiten gibt es, diese 4 Aufgaben auf die drei Personen zu verteilen? . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.;"To solve this problem, we can use the concept of combinations. 
+
+There are 4 tasks to be distributed among 3 people, which can be represented as distributing 4 identical items into 3 distinct boxes. This is equivalent to finding the number of ways to choose 2 items out of 6 (4 items and 2 dividers) to be the dividers between the boxes.
+
+The formula for combinations is given by: 
+nCr = n! / r!(n-r)!
+
+In this case, n = 6 and r = 2. 
+
+Calculating the number of ways to distribute the tasks:
+6! / 2!(6-2)!
+= 6! / 2!4!
+= (6*5*4*3*2*1) / (2*1)(4*3*2*1)
+= 720 / 48
+= 15
+
+Therefore, there are 15 ways to distribute the 4 tasks among the 3 people in the office.";3.220577955
+103;" Auf wie viel verschiedene Arten lassen sich m verschiedene Kugeln auf n verschiedene Schubladen aufteilen?  Please do not show any steps; just provide the final solution.";Die Anzahl der Möglichkeiten, m verschiedene Kugeln auf n verschiedene Schubladen aufzuteilen, beträgt n^m.;0.8192818165;Auf wie viel verschiedene Arten lassen sich m verschiedene Kugeln auf n verschiedene Schubladen aufteilen? . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.;"Um m verschiedene Kugeln auf n verschiedene Schubladen aufzuteilen, können wir den Multiplikationssatz verwenden.
+
+Für jede Kugel gibt es n Möglichkeiten, in welche Schublade sie gelegt werden kann. Da es m verschiedene Kugeln gibt, gibt es insgesamt n^m Möglichkeiten, die Kugeln auf die Schubladen aufzuteilen.
+
+Daher können m verschiedene Kugeln auf n verschiedene Schubladen auf n^m verschiedene Arten aufgeteilt werden.";2.015861989
+104;"Bei einem Münz-Wurf-Spiel wird eine Münze hintereinander mehrmals geworfen, die mit Wahrscheinlichkeit y „Kopf“ wirft. Dabei seien die Würfe total unabhängig voneinander. Wird „Kopf“ geworfen, erhalten Sie einen Euro, wird „Zahl“ geworfen, zahlen Sie einen Euro. Sie starten mit 0 €. Das Spiel bricht ab, wenn Ihr Spielkonto entweder ein Guthaben von 2 € oder Schulden von 2 € aufweist. Wie groß ist die Wahrscheinlichkeit a , dass Sie mit einem Guthaben von 2 € das Spiel beenden?  Please do not show any steps; just provide the final solution.";Die Wahrscheinlichkeit a beträgt 0,75.;0.6888389587;Bei einem Münz-Wurf-Spiel wird eine Münze hintereinander mehrmals geworfen, die mit Wahrscheinlichkeit y „Kopf“ wirft. Dabei seien die Würfe total unabhängig voneinander. Wird „Kopf“ geworfen, erhalten Sie einen Euro, wird „Zahl“ geworfen, zahlen Sie einen Euro. Sie starten mit 0 €. Das Spiel bricht ab, wenn Ihr Spielkonto entweder ein Guthaben von 2 € oder Schulden von 2 € aufweist. Wie groß ist die Wahrscheinlichkeit a , dass Sie mit einem Guthaben von 2 € das Spiel beenden? . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.;"Um die Wahrscheinlichkeit zu berechnen, dass Sie mit einem Guthaben von 2 € das Spiel beenden, können wir den Weg betrachten, wie Sie zu diesem Guthaben gelangen können. 
+
+Es gibt zwei Möglichkeiten, wie Sie mit einem Guthaben von 2 € enden können:
+1. Sie werfen zweimal „Kopf“ und gewinnen insgesamt 2 €.
+2. Sie werfen einmal „Kopf“, dann einmal „Zahl“, dann wieder „Kopf“ und gewinnen insgesamt 2 €.
+
+1. Möglichkeit:
+Die Wahrscheinlichkeit, zweimal „Kopf“ zu werfen, beträgt y * y = y^2.
+
+2. Möglichkeit:
+Die Wahrscheinlichkeit, einmal „Kopf“ zu werfen, beträgt y.
+Die Wahrscheinlichkeit, dann einmal „Zahl“ zu werfen, beträgt 1 - y.
+Die Wahrscheinlichkeit, dann wieder „Kopf“ zu werfen, beträgt y.
+
+Die Gesamtwahrscheinlichkeit für die zweite Möglichkeit beträgt also y * (1 - y) * y = y^2 - y^3.
+
+Die Gesamtwahrscheinlichkeit, mit einem Guthaben von 2 € das Spiel zu beenden, ist die Summe der Wahrscheinlichkeiten beider Möglichkeiten:
+a = y^2 + y^2 - y^3
+a = 2y^2 - y^3
+
+Somit ist die Wahrscheinlichkeit a, dass Sie mit einem Guthaben von 2 € das Spiel beenden, gleich 2y^2 - y^3.";4.482327223
+105;" Bei einer Klausur sind bei jeder Frage m Antwortmöglichkeiten angegeben. Mit Wahrscheinlichkeit a weiß jeder Prüfling die richtige Antwort. Nehmen Sie an, dass ein Prüfling, der die korrekte Antwort nicht weiß, würfelt und eine der m Antworten mit gleicher Wahrscheinlichkeit ankreuzt. Weiß er dagegen die Antwort, so kreuzt er mit Sicherheit die richtige Antwort an. Angenommen, eine Frage sei richtig beantwortet. Wie groß ist die Wahrscheinlichkeit y , dass der Prüfling die Antwort wusste?   Please do not show any steps; just provide the final solution.";Die Wahrscheinlichkeit y ist 1/((m-1)+(m*a)).;0.7192111015;Bei einer Klausur sind bei jeder Frage m Antwortmöglichkeiten angegeben. Mit Wahrscheinlichkeit a weiß jeder Prüfling die richtige Antwort. Nehmen Sie an, dass ein Prüfling, der die korrekte Antwort nicht weiß, würfelt und eine der m Antworten mit gleicher Wahrscheinlichkeit ankreuzt. Weiß er dagegen die Antwort, so kreuzt er mit Sicherheit die richtige Antwort an. Angenommen, eine Frage sei richtig beantwortet. Wie groß ist die Wahrscheinlichkeit y , dass der Prüfling die Antwort wusste?  . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.;"Wir verwenden das Bayes-Theorem, um die Wahrscheinlichkeit zu berechnen, dass der Prüfling die Antwort wusste, gegeben dass die Frage richtig beantwortet wurde.
+
+Seien folgende Ereignisse definiert:
+A: Der Prüfling wusste die Antwort
+B: Die Frage wurde richtig beantwortet
+
+Wir suchen die Wahrscheinlichkeit P(A|B), also die Wahrscheinlichkeit dass der Prüfling die Antwort wusste, gegeben dass die Frage richtig beantwortet wurde.
+
+Nach dem Bayes-Theorem gilt:
+P(A|B) = P(B|A) * P(A) / P(B)
+
+P(B|A) ist die Wahrscheinlichkeit, dass die Frage richtig beantwortet wurde, gegeben dass der Prüfling die Antwort wusste. Da der Prüfling die Antwort kennt, ist diese Wahrscheinlichkeit 1.
+
+P(A) ist die Wahrscheinlichkeit, dass der Prüfling die Antwort wusste, unabhängig davon, ob die Frage richtig beantwortet wurde. Diese Wahrscheinlichkeit ist gegeben als a.
+
+P(B) ist die Gesamtwahrscheinlichkeit, dass die Frage richtig beantwortet wurde. Dies kann auf zwei Arten passieren: entweder der Prüfling wusste die Antwort und hat sie richtig angekreuzt, oder der Prüfling wusste die Antwort nicht und hat sie durch Zufall richtig angekreuzt. Daher gilt:
+P(B) = P(B|A) * P(A) + P(B|nicht A) * P(nicht A)
+
+P(B|nicht A) ist die Wahrscheinlichkeit, dass die Frage richtig beantwortet wurde, gegeben dass der Prüfling die Antwort nicht wusste. Da der Prüfling die Antwort nicht kennt, beträgt die Wahrscheinlichkeit, dass er die richtige Antwort durch Zufall ankreuzt, 1/m.
+
+P(nicht A) ist die Wahrscheinlichkeit, dass der Prüfling die Antwort nicht wusste, also 1-a.
+
+Somit ergibt sich:
+P(B) = 1 * a + 1/m * (1-a)
+
+Nun können wir P(A|B) berechnen:
+P(A|B) = 1 * a / (1 * a + 1/m * (1-a))
+
+Das ist die gesuchte Wahrscheinlichkeit y.";7.961305857
+106;"Der zerstreute Professor verliert mitunter seine Schlüssel. Nun kommt er einmal abends nach Hause und sucht wieder einmal den Schlüssel. Er weiß, dass er mit gleicher Wahrscheinlichkeit in jeder seiner 10 Taschen stecken kann. Neun Taschen hat er bereits erfolglos durchsucht. Er fragt sich, wie groß die Wahrscheinlichkeit ist, dass der Schlüssel in der letzten Tasche steckt, wenn er weiß, dass er auf dem Heimweg mit 5 % Wahrscheinlichkeit seine Schlüssel verliert.  Please do not show any steps; just provide the final solution.";Die Wahrscheinlichkeit, dass der Schlüssel in der letzten Tasche steckt, beträgt 50 %.;0.7985041142;Der zerstreute Professor verliert mitunter seine Schlüssel. Nun kommt er einmal abends nach Hause und sucht wieder einmal den Schlüssel. Er weiß, dass er mit gleicher Wahrscheinlichkeit in jeder seiner 10 Taschen stecken kann. Neun Taschen hat er bereits erfolglos durchsucht. Er fragt sich, wie groß die Wahrscheinlichkeit ist, dass der Schlüssel in der letzten Tasche steckt, wenn er weiß, dass er auf dem Heimweg mit 5 % Wahrscheinlichkeit seine Schlüssel verliert. . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.;"1. Zuerst müssen wir die Wahrscheinlichkeit berechnen, dass der Schlüssel tatsächlich in einer der 10 Taschen steckt, die der Professor hat. Da der Professor mit 5 % Wahrscheinlichkeit seine Schlüssel verliert, beträgt die Wahrscheinlichkeit, dass der Schlüssel in einer der Taschen steckt, 0,05.
+
+2. Da der Professor bereits 9 Taschen erfolglos durchsucht hat, wissen wir, dass der Schlüssel nicht in diesen Taschen steckt. Daher beträgt die Wahrscheinlichkeit, dass der Schlüssel in einer der verbleibenden Taschen steckt, 1 - 9/10 = 1/10.
+
+3. Nun müssen wir die bedingte Wahrscheinlichkeit berechnen, dass der Schlüssel in der letzten Tasche steckt, gegeben dass er in einer der verbleibenden Taschen steckt. Dies können wir mit dem Satz von Bayes berechnen:
+
+P(Schlüssel in letzter Tasche | Schlüssel in einer der verbleibenden Taschen) = P(Schlüssel in letzter Tasche und Schlüssel in einer der verbleibenden Taschen) / P(Schlüssel in einer der verbleibenden Taschen)
+
+4. Die Wahrscheinlichkeit, dass der Schlüssel in der letzten Tasche steckt und in einer der verbleibenden Taschen steckt, beträgt 1/10 * 1/10 = 1/100.
+
+5. Die Wahrscheinlichkeit, dass der Schlüssel in einer der verbleibenden Taschen steckt, beträgt 1/10.
+
+6. Setzen wir diese Werte in die Formel ein:
+
+P(Schlüssel in letzter Tasche | Schlüssel in einer der verbleibenden Taschen) = (1/100) / (1/10) = 1/10
+
+7. Daher beträgt die Wahrscheinlichkeit, dass der Schlüssel in der letzten Tasche steckt, wenn er in einer der verbleibenden Taschen steckt, 1/10 oder 10 %.";8.891058207
+107;"Die Dauer X eines Gesprächs sei exponentialverteilt. Die Wahrscheinlichkeit, dass ein gerade begonnenes Gespräch mindestens 10 Minuten andauert, sei 0.5. Ist dann die Wahrscheinlichkeit, dass ein bereits 30 Minuten andauerndes Gespräch mindestens noch weitere 10 Minuten andauert, kleiner als 0.5?  Please do not show any steps; just provide the final solution.";Ja.;0.4765770435;Die Dauer X eines Gesprächs sei exponentialverteilt. Die Wahrscheinlichkeit, dass ein gerade begonnenes Gespräch mindestens 10 Minuten andauert, sei 0.5. Ist dann die Wahrscheinlichkeit, dass ein bereits 30 Minuten andauerndes Gespräch mindestens noch weitere 10 Minuten andauert, kleiner als 0.5? . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.;"To solve this problem, we can use the memoryless property of the exponential distribution. 
+
+Given that the probability that a conversation lasts at least 10 minutes is 0.5, we can write this as:
+
+P(X > 10) = 0.5
+
+Since the exponential distribution is memoryless, the probability that a conversation that has already lasted 30 minutes will last at least another 10 minutes is the same as the probability that a new conversation will last at least 10 minutes. 
+
+Therefore, we have:
+
+P(X > 40) = P(X > 10) = 0.5
+
+So, the probability that a conversation that has already lasted 30 minutes will last at least another 10 minutes is 0.5, which is equal to the probability that a new conversation will last at least 10 minutes. 
+
+Therefore, the probability that a conversation that has already lasted 30 minutes will last at least another 10 minutes is not less than 0.5.";4.090956211
+108;" Wegen eines Streiks fahren die Busse nicht mehr nach Fahrplan. Die Anzahl der Wartenden an einer Bushaltestelle ist ein Indikator für die seit Abfahrt des letzten Busses verstrichene Zeit. Sie wissen, je mehr Wartende an der Bushaltestelle stehen, um so wahrscheinlicher ist die Ankunft des nächsten Busses. Kann dann die Wartezeit exponentiell verteilt sein? (  Please do not show any steps; just provide the final solution.";Ja, die Wartezeit kann exponentiell verteilt sein.;0.6801512241;Wegen eines Streiks fahren die Busse nicht mehr nach Fahrplan. Die Anzahl der Wartenden an einer Bushaltestelle ist ein Indikator für die seit Abfahrt des letzten Busses verstrichene Zeit. Sie wissen, je mehr Wartende an der Bushaltestelle stehen, um so wahrscheinlicher ist die Ankunft des nächsten Busses. Kann dann die Wartezeit exponentiell verteilt sein? ( . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.;"To determine if the waiting time at the bus stop can be exponentially distributed, we need to consider the characteristics of an exponential distribution.
+
+1. An exponential distribution is characterized by the probability density function f(x) = λe^(-λx) for x ≥ 0, where λ is the rate parameter.
+
+2. In the context of waiting for a bus, the rate parameter λ would represent the average rate at which buses arrive at the bus stop.
+
+3. If the waiting time is exponentially distributed, it means that the probability of waiting a certain amount of time t before the next bus arrives is given by P(X > t) = e^(-λt).
+
+4. In this case, if the number of people waiting at the bus stop is an indicator of the time since the last bus departed, we would expect the probability of the next bus arriving to increase as more people gather at the stop.
+
+5. However, this does not necessarily imply that the waiting time is exponentially distributed. The relationship between the number of people waiting and the waiting time would need to be explicitly defined and shown to follow the characteristics of an exponential distribution.
+
+6. Without further information or a specific model relating the number of people waiting to the waiting time, we cannot definitively conclude that the waiting time is exponentially distributed based solely on the number of people waiting at the bus stop.
+
+In conclusion, the waiting time at the bus stop may or may not be exponentially distributed, depending on the specific relationship between the number of people waiting and the waiting time. Additional information or a specific model would be needed to determine the distribution of the waiting time accurately.";6.266971827
+109;"Die Wahrscheinlichkeit, bei einer U-Bahn-Fahrt kontrolliert zu werden, betrage  θ = 0.1. Wie groß ist die Wahrscheinlichkeit, innerhalb von 20 Fahrten
+(a) höchstens 3-mal,
+(b) mehr als 3-mal,
+(c) weniger als 3-mal,
+(d) mindestens 3-mal,
+(e) genau 3-mal,
+(f) mehr als einmal und weniger als 4-mal kontrolliert zu werden?  Please do not show any steps; just provide the final solution.";"(a) 0.8670
+(b) 0.1330
+(c) 0.6470
+(d) 0.3530
+(e) 0.2702
+(f) 0.2702";1.2456038;"Die Wahrscheinlichkeit, bei einer U-Bahn-Fahrt kontrolliert zu werden, betrage  θ = 0.1. Wie groß ist die Wahrscheinlichkeit, innerhalb von 20 Fahrten
+(a) höchstens 3-mal,
+(b) mehr als 3-mal,
+(c) weniger als 3-mal,
+(d) mindestens 3-mal,
+(e) genau 3-mal,
+(f) mehr als einmal und weniger als 4-mal kontrolliert zu werden? . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.";"(a) Um die Wahrscheinlichkeit zu berechnen, dass bei 20 Fahrten höchstens 3-mal kontrolliert wird, können wir die Binomialverteilung verwenden. Die Formel für die Binomialverteilung lautet:
+
+P(X=k) = (n über k) * θ^k * (1-θ)^(n-k)
+
+Dabei ist n die Anzahl der Versuche (in diesem Fall 20), k die Anzahl der Erfolge (in diesem Fall höchstens 3) und θ die Wahrscheinlichkeit für einen Erfolg (in diesem Fall 0.1).
+
+P(X ≤ 3) = P(X=0) + P(X=1) + P(X=2) + P(X=3)
+
+P(X=0) = (20 über 0) * 0.1^0 * 0.9^20 ≈ 0.1216
+P(X=1) = (20 über 1) * 0.1^1 * 0.9^19 ≈ 0.2702
+P(X=2) = (20 über 2) * 0.1^2 * 0.9^18 ≈ 0.2852
+P(X=3) = (20 über 3) * 0.1^3 * 0.9^17 ≈ 0.1901
+
+P(X ≤ 3) ≈ 0.1216 + 0.2702 + 0.2852 + 0.1901 ≈ 0.8671
+
+Die Wahrscheinlichkeit, bei 20 Fahrten höchstens 3-mal kontrolliert zu werden, beträgt also etwa 0.8671.
+
+(b) Um die Wahrscheinlichkeit zu berechnen, mehr als 3-mal kontrolliert zu werden, können wir die Komplementregel verwenden:
+
+P(X > 3) = 1 - P(X ≤ 3) ≈ 1 - 0.8671 ≈ 0.1329
+
+Die Wahrscheinlichkeit, bei 20 Fahrten mehr als 3-mal kontrolliert zu werden, beträgt also etwa 0.1329.
+
+(c) Um die Wahrscheinlichkeit zu berechnen, weniger als 3-mal kontrolliert zu werden, können wir einfach 1 minus die Wahrscheinlichkeit, höchstens 3-mal kontrolliert zu werden, nehmen:
+
+P(X < 3) = P(X ≤ 2) ≈ 0.1216 + 0.2702 + 0.2852 ≈ 0.6769
+
+Die Wahrscheinlichkeit, bei 20 Fahrten weniger als 3-mal kontrolliert zu werden, beträgt also etwa 0.6769.
+
+(d) Um die Wahrscheinlichkeit zu berechnen, mindestens 3-mal kontrolliert zu werden, können wir die Komplementregel verwenden:
+
+P(X ≥ 3) = 1 - P(X < 3) = 1 - P(X ≤ 2) ≈ 1 - 0.6769 ≈ 0.3231
+
+Die Wahrscheinlichkeit, bei 20 Fahrten mindestens 3-mal kontrolliert zu werden, beträgt also etwa 0.3231.
+
+(e) Um die Wahrscheinlichkeit zu berechnen, genau 3-mal kontrolliert zu werden, können wir einfach P(X=3) ausrechnen:
+
+P(X=3) ≈ 0.1901
+
+Die Wahrscheinlichkeit, bei 20 Fahrten genau 3-mal kontrolliert zu werden, beträgt also etwa 0.1901.
+
+(f) Um die Wahrscheinlichkeit zu berechnen, mehr als einmal und weniger als 4-mal kontrolliert zu werden, müssen wir die Wahrscheinlichkeiten für P(X > 1) und P(X < 4) berechnen und dann den Schnitt dieser beiden Wahrscheinlichkeiten nehmen:
+
+P(X > 1) = 1 - P(X ≤ 1) ≈ 1 - (P(X=0) + P(X=1)) ≈ 1 - (0.1216 + 0.2702) ≈ 0.6082
+P(X < 4) = P(X ≤ 3) ≈ 0.8671
+
+P(1 < X < 4) = P(X > 1) ∩ P(X < 4) = P(X > 1) - P(X > 3) ≈ 0.6082 - 0.8671 ≈ 0
+
+Die Wahrscheinlichkeit, bei 20 Fahrten mehr als einmal und weniger als 4-mal kontrolliert zu werden, beträgt also etwa 0.";16.94372678
+110;"80% aller Verkehrsunfälle werden durch überhöhte Geschwindigkeit verursacht. Wie groß ist die Wahrscheinlichkeit, dass von 20 Verkehrsunfällen (a) mindestens 10, (b) weniger als 15, durch überhöhte Geschwindigkeit verursacht wurden?  Please do not show any steps; just provide the final solution.";"(a) 0.9999
+(b) 0.9987";0.639690876;80% aller Verkehrsunfälle werden durch überhöhte Geschwindigkeit verursacht. Wie groß ist die Wahrscheinlichkeit, dass von 20 Verkehrsunfällen (a) mindestens 10, (b) weniger als 15, durch überhöhte Geschwindigkeit verursacht wurden? . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.;"To solve this problem, we can use the binomial probability formula:
+
+P(X=k) = (n choose k) * p^k * (1-p)^(n-k)
+
+where:
+- n is the total number of trials (20 in this case)
+- k is the number of successful trials (number of accidents caused by over-speeding)
+- p is the probability of success in a single trial (0.8 in this case)
+- (n choose k) is the number of ways to choose k successes out of n trials, calculated as n! / (k! * (n-k)!)
+
+(a) To find the probability of at least 10 accidents caused by over-speeding out of 20 accidents:
+P(X>=10) = P(X=10) + P(X=11) + ... + P(X=20)
+          = Σ (n choose k) * p^k * (1-p)^(n-k) for k=10 to 20
+
+Calculating this sum will give us the probability of at least 10 accidents caused by over-speeding.
+
+(b) To find the probability of less than 15 accidents caused by over-speeding out of 20 accidents:
+P(X<15) = P(X=0) + P(X=1) + ... + P(X=14)
+         = Σ (n choose k) * p^k * (1-p)^(n-k) for k=0 to 14
+
+Calculating this sum will give us the probability of less than 15 accidents caused by over-speeding.
+
+By following these steps and plugging in the values for n, k, p, and calculating the binomial coefficients, you can find the final probabilities for both (a) and (b).";5.127671003
+111;"Sie machen im Schnitt auf 10 Seiten einen Tippfehler. Wie groß ist die Wahrscheinlichkeit, dass Sie auf 50 Seiten höchstens 5 Fehler gemacht haben?  Please do not show any steps; just provide the final solution.";0.9689;0.5084040165;Sie machen im Schnitt auf 10 Seiten einen Tippfehler. Wie groß ist die Wahrscheinlichkeit, dass Sie auf 50 Seiten höchstens 5 Fehler gemacht haben? . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.;"To solve this problem, we can use the binomial distribution formula. 
+
+The formula for the binomial distribution is:
+
+P(X = k) = (n choose k) * p^k * (1-p)^(n-k)
+
+Where:
+- P(X = k) is the probability of getting exactly k successes
+- n is the number of trials
+- k is the number of successes
+- p is the probability of success on a single trial
+- (n choose k) is the number of ways to choose k successes from n trials, calculated as n! / (k! * (n-k)!)
+
+In this case, n = 50 (number of pages), p = 1/10 (probability of making a typo on a single page), and we want to find the probability of having at most 5 errors, so we need to calculate P(X ≤ 5).
+
+P(X ≤ 5) = P(X = 0) + P(X = 1) + P(X = 2) + P(X = 3) + P(X = 4) + P(X = 5)
+
+Now, we can calculate each individual probability using the binomial distribution formula:
+
+P(X = k) = (50 choose k) * (1/10)^k * (9/10)^(50-k)
+
+P(X = 0) = (50 choose 0) * (1/10)^0 * (9/10)^50
+P(X = 1) = (50 choose 1) * (1/10)^1 * (9/10)^49
+P(X = 2) = (50 choose 2) * (1/10)^2 * (9/10)^48
+P(X = 3) = (50 choose 3) * (1/10)^3 * (9/10)^47
+P(X = 4) = (50 choose 4) * (1/10)^4 * (9/10)^46
+P(X = 5) = (50 choose 5) * (1/10)^5 * (9/10)^45
+
+After calculating each of these probabilities, sum them up to get the final answer for P(X ≤ 5).";7.269589663
+112;"Die Dicke eines Blattes Schreibmaschinenpapier sei 1/10 mm mit einer Standardabweichung von 1/50 mm. Wie hoch ist dann ein Stapel von 1000 Blatt, wenn Sie voraussetzen, dass die Papierdicken der einzelnen Blätter unabhängige zufällige Größen sind?  Please do not show any steps; just provide the final solution.";10 mm;0.537334919;Die Dicke eines Blattes Schreibmaschinenpapier sei 1/10 mm mit einer Standardabweichung von 1/50 mm. Wie hoch ist dann ein Stapel von 1000 Blatt, wenn Sie voraussetzen, dass die Papierdicken der einzelnen Blätter unabhängige zufällige Größen sind? . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.;"Um die Höhe des Stapels von 1000 Blatt Schreibmaschinenpapier zu berechnen, müssen wir zuerst den durchschnittlichen Wert der Dicke eines Blattes berechnen. Da die Dicke eines Blattes 1/10 mm beträgt, ist der durchschnittliche Wert für 1000 Blatt:
+
+Durchschnittliche Dicke = 1/10 mm * 1000 = 100 mm
+
+Als nächstes müssen wir die Standardabweichung für den Stapel von 1000 Blatt berechnen. Da die Dicke der einzelnen Blätter unabhängige zufällige Größen sind, können wir die Standardabweichung für den Stapel berechnen, indem wir die Standardabweichung der einzelnen Blätter multiplizieren:
+
+Standardabweichung für 1000 Blatt = 1/50 mm * sqrt(1000) = 1/50 mm * 31.62 = 0.632 mm
+
+Schließlich können wir die Höhe des Stapels von 1000 Blatt Schreibmaschinenpapier berechnen, indem wir den Durchschnittswert und die Standardabweichung addieren:
+
+Höhe des Stapels = Durchschnittliche Dicke + Standardabweichung für 1000 Blatt
+Höhe des Stapels = 100 mm + 0.632 mm
+Höhe des Stapels = 100.632 mm
+
+Daher beträgt die Höhe des Stapels von 1000 Blatt Schreibmaschinenpapier etwa 100.632 mm.";4.880170822
+113;"Fluggesellschaften haben festgestellt, dass Passagiere, die einen Flug reserviert haben – unabhängig von den anderen Passagieren – mit Wahrscheinlichkeit 1/10 nicht am Check-in erscheinen. Deshalb verkauft Gesellschaft A zehn Tickets für ihr neunsitziges Charterflugzeug und Gesellschaft B verkauft 20 Tickets für ihre Flugzeuge mit 18 Sitzen. Die Fluggesellschaft C verkauft für ihren Jumbo mit 500 Plätzen 525 Tickets.
+Welche Gesellschaft ist mit höherer Wahrscheinlichkeit überbucht?
+  Please do not show any steps; just provide the final solution.";Gesellschaft C ist mit höherer Wahrscheinlichkeit überbucht.;0.6276888847;"Fluggesellschaften haben festgestellt, dass Passagiere, die einen Flug reserviert haben – unabhängig von den anderen Passagieren – mit Wahrscheinlichkeit 1/10 nicht am Check-in erscheinen. Deshalb verkauft Gesellschaft A zehn Tickets für ihr neunsitziges Charterflugzeug und Gesellschaft B verkauft 20 Tickets für ihre Flugzeuge mit 18 Sitzen. Die Fluggesellschaft C verkauft für ihren Jumbo mit 500 Plätzen 525 Tickets.
+Welche Gesellschaft ist mit höherer Wahrscheinlichkeit überbucht?
+ . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.";"Um die Wahrscheinlichkeit zu berechnen, dass eine Fluggesellschaft überbucht ist, müssen wir die Wahrscheinlichkeit berechnen, dass mehr Passagiere erscheinen als Sitze vorhanden sind.
+
+Für Gesellschaft A:
+Die Wahrscheinlichkeit, dass alle 10 Passagiere erscheinen, beträgt (9/10)^10 ≈ 0,3487.
+Die Wahrscheinlichkeit, dass mehr als 9 Passagiere erscheinen, beträgt 1 - 0,3487 = 0,6513.
+
+Für Gesellschaft B:
+Die Wahrscheinlichkeit, dass alle 20 Passagiere erscheinen, beträgt (9/10)^20 ≈ 0,1216.
+Die Wahrscheinlichkeit, dass mehr als 18 Passagiere erscheinen, beträgt 1 - 0,1216 = 0,8784.
+
+Für Gesellschaft C:
+Die Wahrscheinlichkeit, dass alle 525 Passagiere erscheinen, beträgt (9/10)^525 ≈ 0.
+Die Wahrscheinlichkeit, dass mehr als 500 Passagiere erscheinen, beträgt 1 - 0 = 1.
+
+Daher ist die Fluggesellschaft mit der höheren Wahrscheinlichkeit, überbucht zu sein, Gesellschaft B mit einer Wahrscheinlichkeit von 0,8784.";5.682723999
+114;" Bei jeder Lottoziehung wird außer den sechs Glückszahlen noch eine siebte Zahl, die Zusatzzahl gezogen. Wie groß ist die Wahrscheinlichkeit, drei Richtige und die Zusatzzahl zu tippen?  Please do not show any steps; just provide the final solution.";Die Wahrscheinlichkeit, drei Richtige und die Zusatzzahl zu tippen, beträgt 1 zu 1.357.510.;0.9370517731;Bei jeder Lottoziehung wird außer den sechs Glückszahlen noch eine siebte Zahl, die Zusatzzahl gezogen. Wie groß ist die Wahrscheinlichkeit, drei Richtige und die Zusatzzahl zu tippen? . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.;"To calculate the probability of getting three correct numbers and the bonus number in a lottery draw, we need to first determine the total number of ways to choose 3 correct numbers out of the 6 winning numbers and 1 bonus number out of the remaining numbers.
+
+1. Calculate the total number of ways to choose 3 correct numbers out of 6:
+This can be calculated using the combination formula: C(n, k) = n! / (k!(n-k)!)
+In this case, n = 6 (total number of winning numbers) and k = 3 (number of correct numbers we want to choose)
+C(6, 3) = 6! / (3!(6-3)!) = 20
+
+2. Calculate the total number of ways to choose 1 bonus number out of the remaining numbers:
+There are 43 numbers left after choosing the 6 winning numbers, so the total number of ways to choose 1 bonus number is 43.
+
+3. Calculate the total number of ways to choose 3 correct numbers and 1 bonus number:
+Multiply the number of ways to choose 3 correct numbers by the number of ways to choose 1 bonus number:
+Total number of ways = 20 * 43 = 860
+
+4. Calculate the total number of possible outcomes in the lottery draw:
+There are a total of C(49, 6) ways to choose 6 numbers out of 49, which is 13,983,816.
+
+5. Calculate the probability of getting 3 correct numbers and the bonus number:
+Probability = Total number of ways to choose 3 correct numbers and 1 bonus number / Total number of possible outcomes
+Probability = 860 / 13,983,816 ≈ 0.0000615
+
+Therefore, the probability of getting three correct numbers and the bonus number in a lottery draw is approximately 0.00615%.";5.076298952
+115;"Die Halbwertszeit einer radioaktiven Substanz ist die Zeit, in der die Hälfte aller Atome zerfallen ist. Die Halbwertszeit von Caesium 137 ist rund 30 Jahre. Nach wie viel Jahren sind 90 % aller Caesiumatome zerfallen, die beim Reaktorunfall von Tschernobyl 1986 freigesetzt wurden?  Please do not show any steps; just provide the final solution.";Nach etwa 93 Jahren sind 90 % aller Caesiumatome zerfallen.;0.7451071739;Die Halbwertszeit einer radioaktiven Substanz ist die Zeit, in der die Hälfte aller Atome zerfallen ist. Die Halbwertszeit von Caesium 137 ist rund 30 Jahre. Nach wie viel Jahren sind 90 % aller Caesiumatome zerfallen, die beim Reaktorunfall von Tschernobyl 1986 freigesetzt wurden? . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.;"1. Berechne zuerst die Anzahl der Halbwertszeiten, die seit dem Reaktorunfall von Tschernobyl 1986 vergangen sind. Da die Halbwertszeit von Caesium 137 30 Jahre beträgt, entspricht eine Halbwertszeit 30 Jahren.
+
+Anzahl der Halbwertszeiten = (Jahr des aktuellen Jahres - Jahr des Reaktorunfalls) / Halbwertszeit
+Anzahl der Halbwertszeiten = (2021 - 1986) / 30
+Anzahl der Halbwertszeiten = 35 / 30
+Anzahl der Halbwertszeiten = 1,17
+
+2. Da wir nur ganze Halbwertszeiten haben können, runden wir die Anzahl der Halbwertszeiten auf die nächste ganze Zahl auf. In diesem Fall sind es 2 Halbwertszeiten.
+
+3. Berechne nun die Menge der verbleibenden Caesiumatome nach 2 Halbwertszeiten.
+
+Menge der verbleibenden Caesiumatome = Anfangsmenge * (1/2)^Anzahl der Halbwertszeiten
+Menge der verbleibenden Caesiumatome = 100 % * (1/2)^2
+Menge der verbleibenden Caesiumatome = 100 % * (1/4)
+Menge der verbleibenden Caesiumatome = 25 %
+
+4. Da 25 % der Caesiumatome noch vorhanden sind, sind 75 % zerfallen. Da 90 % zerfallen sein sollen, müssen wir die Zeit berechnen, die benötigt wird, um 75 % der Caesiumatome zu zerfallen.
+
+Anzahl der Halbwertszeiten für 75 % Zerfall = log(Anfangsmenge / Menge der verbleibenden Caesiumatome) / log(1/2)
+Anzahl der Halbwertszeiten für 75 % Zerfall = log(100 % / 25 %) / log(1/2)
+Anzahl der Halbwertszeiten für 75 % Zerfall = log(4) / log(1/2)
+Anzahl der Halbwertszeiten für 75 % Zerfall = 2
+
+5. Da wir bereits 2 Halbwertszeiten hatten, um 25 % der Caesiumatome zu zerfallen, benötigen wir insgesamt 4 Halbwertszeiten, um 75 % der Caesiumatome zu zerfallen.
+
+6. Berechne die Zeit, die benötigt wird, um 4 Halbwertszeiten zu erreichen.
+
+Zeit = 4 * Halbwertszeit
+Zeit = 4 * 30 Jahre
+Zeit = 120 Jahre
+
+Nach 120 Jahren sind 90 % aller Caesiumatome zerfallen, die beim Reaktorunfall von Tschernobyl 1986 freigesetzt wurden.";11.26422191
+116;"Bei Weizen tritt eine begehrte Mutation mit der Wahrscheinlichkeit von 1/1000 auf. Auf einem Acker werden 10^5 Weizenkörner gesät, bei denen unabhängig voneinander die Mutationen auftreten können. Wie ist die Anzahl X der mutierten Weizenkörner verteilt? Durch welche diskrete Verteilung lässt sich die Verteilung von X approximieren? Durch welche stetige Verteilung lässt sich die Verteilung von X approximieren? Mit wie vielen Mutationen auf dem Acker können wir rechnen?  Please do not show any steps; just provide the final solution.";"X ist annähernd binomialverteilt mit n = 10^5 und p = 1/1000.
+
+Die Verteilung von X kann durch die Poisson-Verteilung approximiert werden.
+
+Die Verteilung von X kann durch die Normalverteilung approximiert werden.
+
+Wir können mit etwa 100 Mutationen auf dem Acker rechnen.";1.440897942;Bei Weizen tritt eine begehrte Mutation mit der Wahrscheinlichkeit von 1/1000 auf. Auf einem Acker werden 10^5 Weizenkörner gesät, bei denen unabhängig voneinander die Mutationen auftreten können. Wie ist die Anzahl X der mutierten Weizenkörner verteilt? Durch welche diskrete Verteilung lässt sich die Verteilung von X approximieren? Durch welche stetige Verteilung lässt sich die Verteilung von X approximieren? Mit wie vielen Mutationen auf dem Acker können wir rechnen? . Show me your steps to the solution. Carefully think through this step-by-step till you reach the final needed answer.;"Um die Verteilung der Anzahl X der mutierten Weizenkörner zu bestimmen, können wir die Binomialverteilung verwenden, da es sich um ein Zufallsexperiment mit zwei möglichen Ergebnissen handelt (Mutation tritt auf oder nicht) und die Wahrscheinlichkeit für das Eintreten eines Erfolgs bekannt ist (1/1000).
+
+Die Anzahl X der mutierten Weizenkörner ist also binomialverteilt mit den Parametern n = 10^5 (Anzahl der Weizenkörner) und p = 1/1000 (Wahrscheinlichkeit einer Mutation).
+
+Um die Binomialverteilung zu approximieren, können wir die Poisson-Verteilung verwenden, da für große n und kleine p die Binomialverteilung der Poisson-Verteilung annähert. In diesem Fall ist n groß (10^5) und p klein (1/1000), daher können wir die Poisson-Verteilung mit dem Parameter λ = n*p = 10^5 * 1/1000 = 100 approximieren.
+
+Für die stetige Verteilung können wir die Normalverteilung verwenden, da die Poisson-Verteilung für große λ der Normalverteilung annähert. Die Normalverteilung hat den Erwartungswert μ = λ = 100 und die Varianz σ^2 = λ = 100.
+
+Um die Anzahl der Mutationen auf dem Acker zu berechnen, können wir den Erwartungswert der Poisson-Verteilung verwenden. Der Erwartungswert einer Poisson-Verteilung ist gleich dem Parameter λ, also können wir mit etwa 100 Mutationen auf dem Acker rechnen.";6.089542866
