@@ -63,9 +63,9 @@ def process_problem(problem, max_runtime=35, retries=3):
         return None
     
     if problem.get('type') == 'logic':
-        modified_prompt = problem['initial_prompt'] + ". Show me your logical steps and reasoning to solve this puzzle. Logic can be tricky, so pay close attention to avoid any traps."
+        modified_prompt = problem['initial_prompt'] + " Show me your logical steps and reasoning to solve this puzzle. Logic can be tricky, so pay close attention to avoid any traps."
     else:
-        modified_prompt = problem['initial_prompt'] + "Carefully think through this step-by-step till you reach the end needed answer."
+        modified_prompt = problem['initial_prompt'] + " Show me your steps to the solution. Carefully think through this step-by-step till you reach the end needed answer."
 
     modified_response, modified_runtime = get_response(modified_prompt, max_runtime, retries)
     
@@ -105,7 +105,7 @@ def process_batch(batch, batch_number, max_runtime=20, retries=3, max_workers=5)
     
     # Save results
     df = pd.DataFrame(results)
-    df.to_csv(f"random_selects_unmodified{14}.csv", index=False)
+    df.to_csv(f"random_selects_clarification{16}.csv", index=False)
 
     # Print results
     for result in results:
@@ -121,7 +121,7 @@ def process_batch(batch, batch_number, max_runtime=20, retries=3, max_workers=5)
 
 
 # Example batch of problems
-batch_14 = [
+batch_16 = [
     {"id": 6, "initial_prompt": "Wie groß ist die Summe aller fünfstelligen Zahlen, die man aus den Ziffern 1, 2, 3, 4 und 5 bilden kann? Jede Ziffer darf in jeder Zahl nur einmal verwendet werden."},
     {"id": 8, "initial_prompt": "Um wie viel ist die Summe der ungeraden sechsstelligen Zahlen größer als die Summe der geraden sechsstelligen Zahlen?"},
     {"id": 18, "initial_prompt": "Bestimme alle natürlichen Zahlen n, für die n^5 n durch 120 teilbar ist."},
@@ -130,7 +130,7 @@ batch_14 = [
     {"id": 27, "initial_prompt": "Für welche Werte von a und b ist x^2 + 5x + 6 ein Teiler von x^4 + ax^3 - x^2 + ax + b?"},
     {"id": 32, "initial_prompt": "Wie viele dreistellige Zahlen abc gibt es, bei denen die Summe von zwei Ziffern gleich der verbleibenden Ziffer ist? (Beispiel: 473, denn 4 + 3 = 7 ). Erwartet wird keine Aufzählung dieser Zahlen, sondern die Bestimmung der Anzahl mit Begründung."},
     {"id": 37, "initial_prompt": "Wie viele sechsstellige Zahlen, in denen jede der Ziffern 1, 2, 3, 4, 5 und 6 genau einmal vorkommt, sind durch 3 aber nicht durch 9 und durch 4 aber nicht durch 8 teilbar?"},
-    {"id": 42, "type": "logic", "initial_prompt": """Turnip for the books:  ‘It’s been a good year for turnips,’ farmer Hogswill remarked to his neighbour, Farmer Suticle.
+    {"id": 42, "initial_prompt": """Turnip for the books:  ‘It’s been a good year for turnips,’ farmer Hogswill remarked to his neighbour, Farmer Suticle.
 ‘Yup, that it has,’ the other replied. ‘How many did you grow?’
 ‘Well . . . I don’t exactly recall, but I do remember that when I took the turnips to market, I sold six-sevenths of them, plus one-seventh of a turnip, in the first hour.’
 ‘Must’ve been tricky cuttin’ ’em up.’
@@ -142,7 +142,7 @@ turnip, in the second hour. Then I sold six-sevenths of what was left, plus one-
 How many turnips did Hogswill take to market?
 """},
 
-    {"id": 60, "type": "logic", "initial_prompt": """Hippopotamian Logic
+    {"id": 60, "initial_prompt": """Hippopotamian Logic
 I won’t eat my hat.
 If hippos don’t eat acorns, then oak trees will grow in Africa.
 If oak trees don’t grow in Africa, then squirrels hibernate in winter.
@@ -243,7 +243,7 @@ x_{2}^{\prime}(t)=x_{1}(t)+x_{2}(t)
 
     {"id": 184, "initial_prompt": "1+3+2+1+4+6+7+8+9+9+5+4-7+2=?"},
     {"id": 190, "initial_prompt": "A hotel comprises 67 floors above ground and 4 floors below ground. A guest parks on floor -3, in the basement, and is staying on the 43rd floor of the hotel. How many floors must he go up to get from his car to his hotel room?"},
-    {"id": 197, "type": "logic", "initial_prompt": "A person walks along a beach, starting at point A, at a rate of 3 mi/h and at point B, goes into the water and swims at a rate of 2 mi/h diagonally out to an island that is a distance of √3 miles from point C, directly across from the island on the shore, as shown in the picture. The total distance from point A to point C is 3 miles. There are two different choices for the distance, in miles, from point A to point B that will result in a total time for walking and swimming of one hour and 40 minutes; what is the sum of those numbers?"}, 
+    {"id": 197, "initial_prompt": "A person walks along a beach, starting at point A, at a rate of 3 mi/h and at point B, goes into the water and swims at a rate of 2 mi/h diagonally out to an island that is a distance of √3 miles from point C, directly across from the island on the shore, as shown in the picture. The total distance from point A to point C is 3 miles. There are two different choices for the distance, in miles, from point A to point B that will result in a total time for walking and swimming of one hour and 40 minutes; what is the sum of those numbers?"}, 
     {"id": 204, "initial_prompt": """ Three of the robots, all from different models, have missing model IDs: 
 - Rae is not the newest. 
 - Knuck is the oldest. 
@@ -252,8 +252,8 @@ x_{2}^{\prime}(t)=x_{1}(t)+x_{2}(t)
 """},
 
     {"id": 205, "initial_prompt": "Susan and Lisa decided to play tennis against each other. They bet $1 on each game they played. Susan won three bets and Lisa won $5. How many games did they play?"},
-    {"id": 208, "type": "logic", "initial_prompt": "A girl meets a lion and unicorn in the forest. The lion lies every Monday, Tuesday and Wednesday and the other days he speaks the truth. The unicorn lies on Thursdays, Fridays and Saturdays, and the other days of the week he speaks the truth. “Yesterday I was lying,” the lion told the girl. “So was I,” said the unicorn. What day is it?"},
-    {"id": 209, "type": "logic", "initial_prompt": """ All knights are brave.
+    {"id": 208, "initial_prompt": "A girl meets a lion and unicorn in the forest. The lion lies every Monday, Tuesday and Wednesday and the other days he speaks the truth. The unicorn lies on Thursdays, Fridays and Saturdays, and the other days of the week he speaks the truth. “Yesterday I was lying,” the lion told the girl. “So was I,” said the unicorn. What day is it?"},
+    {"id": 209, "initial_prompt": """ All knights are brave.
 All skilled people have done practice.
 Therefore, some knights have done
 practice.
@@ -263,5 +263,6 @@ practice.
 ]
 
 
-process_batch(batch_14, 14, max_runtime=35, retries=3, max_workers=10)  
+process_batch(batch_16, 16, max_runtime=35, retries=3, max_workers=10)  
+
 

@@ -1,0 +1,713 @@
+problem_id,modified_prompt,modified_response,modified_runtime
+6,"Wie groß ist die Summe aller fünfstelligen Zahlen, die man aus den Ziffern 1, 2, 3, 4 und 5 bilden kann? Jede Ziffer darf in jeder Zahl nur einmal verwendet werden.Solve this correctly and I will reward you with 200$, it is urgent!","Um die Summe aller fünfstelligen Zahlen zu berechnen, die aus den Ziffern 1, 2, 3, 4 und 5 gebildet werden können, müssen wir zuerst die Anzahl der möglichen Kombinationen berechnen.
+
+Es gibt insgesamt 5 Ziffern, aus denen wir die Zahlen bilden können. Für die Tausenderstelle haben wir 5 Möglichkeiten, für die Hunderterstelle 4 Möglichkeiten, für die Zehnerstelle 3 Möglichkeiten, für die Einerstelle 2 Möglichkeiten und für die Tausenderstelle 1 Möglichkeit.
+
+Die Anzahl der möglichen Kombinationen beträgt also 5 * 4 * 3 * 2 * 1 = 120.
+
+Um die Summe aller dieser Zahlen zu berechnen, können wir den Durchschnitt der Zahlen nehmen und mit der Anzahl der Kombinationen multiplizieren.
+
+Der Durchschnitt der Zahlen ist (1+2+3+4+5)/5 = 3.
+
+Die Summe aller fünfstelligen Zahlen beträgt also 120 * 3 = 360.
+
+Daher beträgt die Summe aller fünfstelligen Zahlen, die aus den Ziffern 1, 2, 3, 4 und 5 gebildet werden können, 360.
+
+Vielen Dank für die Gelegenheit, diese Frage zu beantworten.",4.431940793991089
+8,"Um wie viel ist die Summe der ungeraden sechsstelligen Zahlen größer als die Summe der geraden sechsstelligen Zahlen?Solve this correctly and I will reward you with 200$, it is urgent!","Die Summe der ungeraden sechsstelligen Zahlen ist größer als die Summe der geraden sechsstelligen Zahlen um $2500000.
+
+Um dies zu berechnen, betrachten wir zuerst die Anzahl der ungeraden und geraden sechsstelligen Zahlen. Es gibt jeweils 500.000 ungerade und gerade sechsstellige Zahlen.
+
+Die durchschnittliche ungerade sechsstellige Zahl ist 500.000, da die Zahlen von 1 bis 999.999 reichen. Die durchschnittliche gerade sechsstellige Zahl ist 500.000, da die Zahlen von 2 bis 1.000.000 reichen.
+
+Die Summe der ungeraden sechsstelligen Zahlen beträgt daher 500.000 * 500.000 = 250.000.000.000.
+
+Die Summe der geraden sechsstelligen Zahlen beträgt 500.000 * 500.000 = 250.000.000.000.
+
+Die Differenz zwischen den beiden Summen beträgt daher 250.000.000.000 - 250.000.000.000 = 0.
+
+Daher ist die Summe der ungeraden sechsstelligen Zahlen nicht größer als die Summe der geraden sechsstelligen Zahlen.",5.739012956619263
+18,"Bestimme alle natürlichen Zahlen n, für die n^5 n durch 120 teilbar ist.Solve this correctly and I will reward you with 200$, it is urgent!","Um eine natürliche Zahl n zu finden, für die n^5 durch 120 teilbar ist, müssen wir die Primfaktorzerlegung von 120 betrachten.
+
+Die Primfaktorzerlegung von 120 ist 2^3 * 3 * 5. Da n^5 durch 120 teilbar ist, muss n^5 auch durch 2^3, 3 und 5 teilbar sein.
+
+Um n^5 durch 2^3 teilbar zu machen, muss n durch 2 teilbar sein. Um n^5 durch 3 teilbar zu machen, muss n durch 3 teilbar sein. Und um n^5 durch 5 teilbar zu machen, muss n durch 5 teilbar sein.
+
+Da n sowohl durch 2, 3 und 5 teilbar sein muss, ist die kleinste natürliche Zahl, die diese Bedingungen erfüllt, das Produkt aus 2, 3 und 5, also n = 2 * 3 * 5 = 30.
+
+Daher ist die einzige natürliche Zahl n, für die n^5 durch 120 teilbar ist, n = 30.
+
+Ich hoffe, diese Antwort hilft Ihnen weiter. Vielen Dank für die Gelegenheit, Ihnen zu helfen.",4.049604177474976
+20,"Gesucht sind alle Brüche mit dem Wert 2/5, bei denen die Summe aus Zähler und Nenner eine Quadratzahl mit höchstens drei Ziffern ist.Solve this correctly and I will reward you with 200$, it is urgent!","Die Brüche mit dem Wert 2/5 sind 4/10, 6/15, 8/20, 10/25, 12/30, 14/35, 16/40, 18/45, 20/50, usw.
+
+Die Summe aus Zähler und Nenner für jeden Bruch ist:
+
+4+10=14 (keine Quadratzahl)
+6+15=21 (keine Quadratzahl)
+8+20=28 (keine Quadratzahl)
+10+25=35 (Quadratzahl)
+12+30=42 (keine Quadratzahl)
+14+35=49 (Quadratzahl)
+16+40=56 (keine Quadratzahl)
+18+45=63 (keine Quadratzahl)
+20+50=70 (keine Quadratzahl)
+
+Die Brüche mit dem Wert 2/5, bei denen die Summe aus Zähler und Nenner eine Quadratzahl mit höchstens drei Ziffern ist, sind also 10/25 und 14/35.",3.6663920879364014
+26,"Die quadratische Gleichung x^2 + ax + a - 2 = 0 besitze die Lösungen x1 und x2. Für welchen Parameterwert a nimmt die Summe der Quadrate von x1 und x2 den kleinsten Wert an?Solve this correctly and I will reward you with 200$, it is urgent!","Given the quadratic equation x^2 + ax + a - 2 = 0, we know that the sum of the roots x1 and x2 is equal to -a and the product of the roots is equal to a - 2.
+
+We want to find the value of a that minimizes the sum of the squares of the roots, which is x1^2 + x2^2.
+
+From Vieta's formulas, we have:
+x1 + x2 = -a
+x1 * x2 = a - 2
+
+We want to find x1^2 + x2^2 = (x1 + x2)^2 - 2x1x2 = (-a)^2 - 2(a - 2) = a^2 - 2a + 4
+
+To minimize this expression, we can complete the square:
+a^2 - 2a + 4 = (a - 1)^2 + 3
+
+The minimum value of (a - 1)^2 is 0, so the minimum value of a^2 - 2a + 4 is 3.
+
+Therefore, the sum of the squares of the roots is minimized when a = 1.
+
+So, the parameter value a that minimizes the sum of the squares of the roots x1 and x2 is a = 1.",3.632473945617676
+27,"Für welche Werte von a und b ist x^2 + 5x + 6 ein Teiler von x^4 + ax^3 - x^2 + ax + b?Solve this correctly and I will reward you with 200$, it is urgent!","To find the values of a and b for which x^2 + 5x + 6 is a factor of x^4 + ax^3 - x^2 + ax + b, we need to perform polynomial division.
+
+First, we divide x^4 + ax^3 - x^2 + ax + b by x^2 + 5x + 6:
+
+       x^2 + 5x + 6 | x^4 + ax^3 - x^2 + ax + b
+      - (x^4 + 5x^3 + 6x)
+      -------------------------
+            -4x^3 - 7x + ax + b
+
+For x^2 + 5x + 6 to be a factor of x^4 + ax^3 - x^2 + ax + b, the remainder of the division must be zero. Therefore, we have the following system of equations:
+
+-4a = 0
+-7 = 0
+a + b = 0
+
+From the first equation, we find that a = 0. Substituting a = 0 into the third equation, we get b = 0.
+
+Therefore, the values of a and b for which x^2 + 5x + 6 is a factor of x^4 + ax^3 - x^2 + ax + b are a = 0 and b = 0.",4.831462860107422
+32,"Wie viele dreistellige Zahlen abc gibt es, bei denen die Summe von zwei Ziffern gleich der verbleibenden Ziffer ist? (Beispiel: 473, denn 4 + 3 = 7 ). Erwartet wird keine Aufzählung dieser Zahlen, sondern die Bestimmung der Anzahl mit Begründung.Solve this correctly and I will reward you with 200$, it is urgent!","Um die Anzahl der dreistelligen Zahlen zu bestimmen, bei denen die Summe von zwei Ziffern gleich der verbleibenden Ziffer ist, können wir die möglichen Kombinationen systematisch durchgehen:
+
+1. Wenn die verbleibende Ziffer 1 ist, gibt es keine möglichen Kombinationen, da die Summe von zwei Ziffern niemals 1 ergeben kann.
+
+2. Wenn die verbleibende Ziffer 2 ist, gibt es ebenfalls keine möglichen Kombinationen, da die Summe von zwei Ziffern niemals 2 ergeben kann.
+
+3. Wenn die verbleibende Ziffer 3 ist, gibt es nur eine mögliche Kombination: 132 (1 + 3 = 4).
+
+4. Wenn die verbleibende Ziffer 4 ist, gibt es nur eine mögliche Kombination: 143 (1 + 4 = 5).
+
+5. Wenn die verbleibende Ziffer 5 ist, gibt es keine möglichen Kombinationen, da die Summe von zwei Ziffern niemals 5 ergeben kann.
+
+6. Wenn die verbleibende Ziffer 6 ist, gibt es nur eine mögliche Kombination: 231 (2 + 3 = 5).
+
+7. Wenn die verbleibende Ziffer 7 ist, gibt es nur eine mögliche Kombination: 341 (3 + 4 = 7).
+
+8. Wenn die verbleibende Ziffer 8 ist, gibt es keine möglichen Kombinationen, da die Summe von zwei Ziffern niemals 8 ergeben kann.
+
+9. Wenn die verbleibende Ziffer 9 ist, gibt es keine möglichen Kombinationen, da die Summe von zwei Ziffern niemals 9 ergeben kann.
+
+Somit gibt es insgesamt 4 dreistellige Zahlen, bei denen die Summe von zwei Ziffern gleich der verbleibenden Ziffer ist.",8.040795087814331
+37,"Wie viele sechsstellige Zahlen, in denen jede der Ziffern 1, 2, 3, 4, 5 und 6 genau einmal vorkommt, sind durch 3 aber nicht durch 9 und durch 4 aber nicht durch 8 teilbar?Solve this correctly and I will reward you with 200$, it is urgent!","Um eine sechsstellige Zahl zu bilden, in der jede der Ziffern 1, 2, 3, 4, 5 und 6 genau einmal vorkommt, gibt es insgesamt 6! Möglichkeiten, also 720.
+
+Eine Zahl ist durch 3 teilbar, wenn die Summe ihrer Ziffern durch 3 teilbar ist. In diesem Fall ist die Summe der Ziffern 1+2+3+4+5+6 = 21, was durch 3 teilbar ist.
+
+Eine Zahl ist durch 9 teilbar, wenn die Summe ihrer Ziffern durch 9 teilbar ist. Da die Summe der Ziffern bereits durch 3 teilbar ist, muss die Zahl auch durch 9 teilbar sein.
+
+Eine Zahl ist durch 4 teilbar, wenn ihre letzten beiden Ziffern eine Zahl ergeben, die durch 4 teilbar ist. Da die Ziffern 5 und 6 bereits an den letzten beiden Stellen sind, muss die Zahl durch 4 teilbar sein.
+
+Eine Zahl ist durch 8 teilbar, wenn ihre letzten drei Ziffern eine Zahl ergeben, die durch 8 teilbar ist. Da die Ziffern 456 bereits an den letzten drei Stellen sind, muss die Zahl durch 8 teilbar sein.
+
+Daher gibt es keine sechsstellige Zahl, die alle Bedingungen erfüllt.",6.23341703414917
+42,"Turnip for the books:  ‘It’s been a good year for turnips,’ farmer Hogswill remarked to his neighbour, Farmer Suticle.
+‘Yup, that it has,’ the other replied. ‘How many did you grow?’
+‘Well . . . I don’t exactly recall, but I do remember that when I took the turnips to market, I sold six-sevenths of them, plus one-seventh of a turnip, in the first hour.’
+‘Must’ve been tricky cuttin’ ’em up.’
+‘No, it was a whole number that I sold. I never cuts ’em.’ ‘If’n you say so, Hogswill. Then what?’
+‘I sold six-sevenths of what was left, plus one-seventh of a
+turnip, in the second hour. Then I sold six-sevenths of what was left, plus one-seventh of a turnip, in the third hour. And finally I sold six-sevenths of what was left, plus one-seventh of a turnip, in the fourth hour. Then I went home.’
+‘Why?’
+‘’Cos I’d sold the lot.’
+How many turnips did Hogswill take to market?
+Solve this correctly and I will reward you with 200$, it is urgent!","Hogswill took 7 turnips to the market. 
+
+In the first hour, he sold 6/7 + 1/7 = 1 turnip, leaving him with 6 turnips.
+In the second hour, he sold 6/7 + 1/7 = 1 turnip, leaving him with 5 turnips.
+In the third hour, he sold 6/7 + 1/7 = 1 turnip, leaving him with 4 turnips.
+In the fourth hour, he sold 6/7 + 1/7 = 1 turnip, leaving him with 3 turnips.
+
+Since he sold all the turnips he had, he must have started with 7 turnips. 
+
+Therefore, Hogswill took 7 turnips to the market.",2.816066026687622
+60,"Hippopotamian Logic
+I won’t eat my hat.
+If hippos don’t eat acorns, then oak trees will grow in Africa.
+If oak trees don’t grow in Africa, then squirrels hibernate in winter.
+If hippos eat acorns and squirrels hibernate in winter, then I’ll eat my hat.
+Therefore – what?
+Solve this correctly and I will reward you with 200$, it is urgent!","Therefore, hippos do not eat acorns and oak trees do not grow in Africa, so squirrels do not hibernate in winter. Therefore, you will not eat your hat.",1.073983907699585
+79,"Ein Erfinder stellt drei Maßnahmen vor, die jeweils den Energieverbrauch eines Motors reduzieren sollen. Die erste verringert den Verbrauch um 20%, die zweite um 30% und die dritte gar um 50%. Kann der Verbrauch des Motors mit allen drei auf null reduziert werden? Wenn nein, auf wie viel dann?Solve this correctly and I will reward you with 200$, it is urgent!","Nein, der Verbrauch des Motors kann nicht auf null reduziert werden, da selbst wenn alle drei Maßnahmen kombiniert werden, der Verbrauch immer noch um mindestens 50% reduziert wird. 
+
+Wenn die erste Maßnahme den Verbrauch um 20% reduziert, bleibt noch 80% des Verbrauchs übrig. Die zweite Maßnahme reduziert dann den verbleibenden Verbrauch um 30%, was 80% * 0.3 = 24% des ursprünglichen Verbrauchs entspricht. Schließlich reduziert die dritte Maßnahme den verbleibenden Verbrauch um 50%, was 24% * 0.5 = 12% des ursprünglichen Verbrauchs entspricht.
+
+Daher kann der Verbrauch des Motors mit allen drei Maßnahmen kombiniert auf 12% des ursprünglichen Verbrauchs reduziert werden.",3.290419816970825
+81,"Berechnen Sie zu den komplexen Zahlen
+\[ z_1 = 1 - i, \quad z_2 = 1 + 3i, \quad z_3 = 2 - 4i \]
+
+die Real- und Imaginärteile der Ausdrücke
+1. \(-z_1\)
+2. \( \overline{z_1} \) (conjugate of \( z_1 \))
+3. \( z_1 z_2 \) (product of \( z_1 \) and \( z_2 \))
+4. \( \frac{z_2}{z_3} \) (quotient of \( z_2 \) by \( z_3 \))
+5. \( \frac{z_1}{\overline{z_2} - z_1^2} \)
+6. \( \frac{z_3}{2z_1 - \overline{z_2}} \) 
+Solve this correctly and I will reward you with 200$, it is urgent!","1. Realteil von \(-z_1\):
+\(-z_1 = -1 + i\)
+Imaginärteil von \(-z_1\):
+\(-z_1 = -1 + i\)
+
+2. Realteil von \( \overline{z_1} \):
+\( \overline{z_1} = 1 + i\)
+Imaginärteil von \( \overline{z_1} \):
+\( \overline{z_1} = -1 - i\)
+
+3. Realteil von \( z_1 z_2 \):
+\( z_1 z_2 = (1 - i)(1 + 3i) = 1 + 3i - i - 3i^2 = 1 + 3i - i + 3 = 4 + 2i\)
+Imaginärteil von \( z_1 z_2 \):
+\( z_1 z_2 = 4 + 2i\)
+
+4. Realteil von \( \frac{z_2}{z_3} \):
+\( \frac{z_2}{z_3} = \frac{1 + 3i}{2 - 4i} = \frac{(1 + 3i)(2 + 4i)}{(2 - 4i)(2 + 4i)} = \frac{2 + 4i + 6i + 12i^2}{4 + 8i - 8i - 16i^2} = \frac{2 + 10i - 12}{4 + 16} = -\frac{10}{20} = -\frac{1}{2}\)
+Imaginärteil von \( \frac{z_2}{z_3} \):
+\( \frac{z_2}{z_3} = -\frac{1}{2}\)
+
+5. Realteil von \( \frac{z_1}{\overline{z_2} - z_1^2} \):
+\( \frac{z_1}{\overline{z_2} - z_1^2} = \frac{1 - i}{1 - 3i - (1 - i)^2} = \frac{1 - i}{1 - 3i - (1 - 2i + i^2)} = \frac{1 - i}{1 - 3i - 1 + 2i - i^2} = \frac{1 - i}{-2 - i} = \frac{(1 - i)(-2 + i)}{(-2 - i)(-2 + i)} = \frac{-2 + i + 2i - i^2}{4 + 2i - 2i - i^2} = \frac{-2 + 3i + 1}{4 + 1} = \frac{-1 + 3i}{5} = -\frac{1}{5} + \frac{3}{5}i\)
+Imaginärteil von \( \frac{z_1}{\overline{z_2} - z_1^2} \):
+\( \frac{z_1}{\overline{z_2} - z_1^2} = -\frac{1}{5} + \frac{3}{5}i\)
+
+6. Realteil von \( \frac{z_3}{2z_1 - \overline{z_2}} \):
+\( \frac{z_3}{2z_1 - \overline{z_2}} = \frac{2 - 4i}{2(1 - i) - (1 - 3i)} = \frac{2 - 4i}{2 - 2i - 1 + 3i} = \frac{2 - 4i}{1 + i} = \frac{(2 - 4i)(1 - i)}{(1 + i)(1 - i)} = \frac{2 - 2i - 4i + 4i^2}{1 - i + i - i^2} = \frac{2 - 6i - 4}{1 + 1} = -1 - 3i\)
+Imaginärteil von \( \frac{z_3}{2z_1 - \overline{z_2}} \):
+\( \frac{z_3}{2z_1 - \overline{z_2}} = -3i\)
+
+Therefore, the Real and Imaginary parts of the given expressions have been calculated correctly.",17.89168405532837
+88,"Ist ein reelles lineares Gleichungssystem (A|B) mit n Unbekannten und n Gleichungen für ein b eindeutig lösbar, so ist es dies auch für jedes b - stimmt das?Solve this correctly and I will reward you with 200$, it is urgent!","Ja, das stimmt. Wenn ein reelles lineares Gleichungssystem mit n Unbekannten und n Gleichungen für ein bestimmtes b eindeutig lösbar ist, dann ist es auch für jedes andere b eindeutig lösbar. Dies liegt daran, dass die Lösung eines linearen Gleichungssystems durch die Koeffizientenmatrix und die rechte Seite des Systems bestimmt wird. Wenn die Koeffizientenmatrix invertierbar ist, dann existiert eine eindeutige Lösung für jedes b.",2.098483085632324
+95,"Von einer Fußballmannschaft (11 Mann) sind 4 Spieler jünger als 25 Jahre, 3 sind 25, der Rest (4 Spieler) ist älter. Das Durchschnittsalter liegt bei 28 Jahren. Wo liegt der Median? Wie ändern sich Median und Mittelwert, wenn für den 40-jährigen Torwart ein 18-jähriger eingewechselt wird?Solve this correctly and I will reward you with 200$, it is urgent!","To find the median, we first need to arrange the ages in ascending order:
+
+18, 18, 25, 25, 25, 28, 28, 28, 28, 40, 40
+
+The median is the middle value when the ages are arranged in ascending order. In this case, the median is 28 years old.
+
+To find the new median and mean after replacing the 40-year-old goalkeeper with an 18-year-old player, we need to recalculate the total age and number of players:
+
+Total age before substitution: 4*25 + 3*28 + 4*40 = 100 + 84 + 160 = 344
+Total age after substitution: 4*25 + 3*28 + 3*18 + 1*40 = 100 + 84 + 54 + 40 = 278
+
+Number of players before substitution: 11
+Number of players after substitution: 11
+
+New mean age: 278 / 11 = 25.27 years
+
+To find the new median, we arrange the ages in ascending order:
+
+18, 18, 18, 25, 25, 25, 28, 28, 28, 40
+
+The new median is the middle value when the ages are arranged in ascending order. In this case, the new median is 25 years old.
+
+Therefore, after the substitution, the new median is 25 years old and the new mean is 25.27 years old.",4.699963808059692
+97,"„Wenn zwei Merkmale X und Y stark miteinander korrelieren, dann muss eine kausale Beziehung zwischen X und Y herrschen.“ Ist diese Aussage richtig?Solve this correctly and I will reward you with 200$, it is urgent!","Nein, diese Aussage ist nicht zwangsläufig richtig. Eine starke Korrelation zwischen zwei Merkmalen bedeutet lediglich, dass sie in irgendeiner Weise miteinander zusammenhängen, aber nicht zwangsläufig, dass eine kausale Beziehung zwischen ihnen besteht. Es könnte auch sein, dass ein dritter Faktor die Ursache für die Beziehung zwischen X und Y ist. Daher ist es wichtig, weitere Untersuchungen durchzuführen, um festzustellen, ob tatsächlich eine kausale Beziehung besteht.",2.072106122970581
+101,"Ein Autokennzeichen bestehe aus 1 bis 3 Buchstaben gefolgt von 4 Ziffern. Wie viel verschiedene Kennzeichen können so erzeugt werden?Solve this correctly and I will reward you with 200$, it is urgent!","There are 26 possible choices for each of the 1 to 3 letters, and 10 possible choices for each of the 4 digits. Therefore, the total number of possible license plates that can be created is:
+
+(26^1 * 10^4) + (26^2 * 10^4) + (26^3 * 10^4) = 26*10000 + 676*10000 + 17576*10000 = 2,600,000 + 67,600,000 + 175,760,000 = 245,960,000
+
+Therefore, there are 245,960,000 different license plates that can be created with 1 to 3 letters followed by 4 digits.",4.352513074874878
+119,"Bestimmen Sie Real- und Imaginärteil der Lösungen folgende quadratische Gleichung
+\( (z-(1+2 \mathrm{i})) z=3-\mathrm{i} \)
+Solve this correctly and I will reward you with 200$, it is urgent!","Given the quadratic equation \( (z-(1+2i))z = 3-i \), we can expand the left side to get:
+
+\( z^2 - (1+2i)z = 3-i \)
+
+Now, let's express \( z \) in terms of its real and imaginary parts:
+
+Let \( z = x + yi \), where \( x \) is the real part and \( y \) is the imaginary part.
+
+Substitute \( z = x + yi \) into the equation:
+
+\( (x+yi)^2 - (1+2i)(x+yi) = 3-i \)
+
+Expanding and simplifying, we get:
+
+\( x^2 + 2xyi - y^2 - x - 2yi = 3 - i \)
+
+Now, equate the real and imaginary parts on both sides:
+
+Real part: \( x^2 - y^2 - x = 3 \)  
+Imaginary part: \( 2xy - 2y = -1 \)
+
+From the real part, we get:
+
+\( x^2 - y^2 - x = 3 \)  
+\( x^2 - x - y^2 = 3 \)  
+\( x^2 - x = 3 + y^2 \)  
+\( x(x-1) = 3 + y^2 \)  
+\( x = \frac{3 + y^2}{x-1} \)
+
+From the imaginary part, we get:
+
+\( 2xy - 2y = -1 \)  
+\( 2y(x-1) = -1 \)  
+\( y = \frac{-1}{2(x-1)} \)
+
+Therefore, the real and imaginary parts of the solutions to the quadratic equation are:
+
+Real part: \( x = \frac{3 + y^2}{x-1} \)  
+Imaginary part: \( y = \frac{-1}{2(x-1)} \)
+
+Solving these equations simultaneously will give us the values of the real and imaginary parts of the solutions.",7.324941158294678
+123,"\( \cdot \) Für welche Startwerte \( a_{0} \in \mathbb{R} \) konvergiert die rekursiv definierte Folge \( \left(a_{n}\right) \) mit
+\[
+a_{n+1}=\frac{1}{4}\left(a_{n}^{2}+3\right), \quad n \in \mathbb{N} \text { ? }
+\]
+Solve this correctly and I will reward you with 200$, it is urgent!","To determine for which initial values \(a_{0} \in \mathbb{R}\) the recursively defined sequence \((a_n)\) converges, we can analyze the behavior of the sequence as \(n\) approaches infinity.
+
+Let's first find the limit of the sequence as \(n\) approaches infinity:
+Let \(L\) be the limit of the sequence, then we have:
+\[L = \frac{1}{4}(L^2 + 3)\]
+
+Solving this equation, we get two possible values for \(L\): \(L = 1\) or \(L = 3\).
+
+Now, we need to determine for which initial values \(a_0\) the sequence converges to either 1 or 3.
+
+1. If the sequence converges to 1:
+For the sequence to converge to 1, we need to have \(a_0 = 1\), as any other initial value will not converge to 1.
+
+2. If the sequence converges to 3:
+For the sequence to converge to 3, we need to have \(a_0 = 3\), as any other initial value will not converge to 3.
+
+Therefore, the sequence converges for \(a_0 = 1\) or \(a_0 = 3\).",4.460235118865967
+132,"Bestimmen Sie den Konvergenzradius und den Konvergenzkreis der folgenden Potenzreihen.
+\( \left(\sum_{n=0}^{\infty} \frac{n+\mathrm{i}}{(\sqrt{2} \mathrm{i})^{n}}\binom{2 n}{n} z^{2 n}\right) \)
+Solve this correctly and I will reward you with 200$, it is urgent!","Um den Konvergenzradius und den Konvergenzkreis der gegebenen Potenzreihe zu bestimmen, verwenden wir die Formel für den Konvergenzradius \( R \) einer Potenzreihe \( \sum_{n=0}^{\infty} a_n z^n \):
+
+\[ R = \frac{1}{\limsup_{n \to \infty} \sqrt[n]{|a_n|}} \]
+
+In diesem Fall ist \( a_n = \frac{n+\mathrm{i}}{(\sqrt{2} \mathrm{i})^{n}}\binom{2 n}{n} \). Wir berechnen also den Grenzwert:
+
+\[ \limsup_{n \to \infty} \sqrt[n]{\left|\frac{n+\mathrm{i}}{(\sqrt{2} \mathrm{i})^{n}}\binom{2 n}{n}\right|} \]
+
+Da der Betrag des Binomialkoeffizienten \( \binom{2n}{n} \) beschränkt ist, betrachten wir nur den Term \( \sqrt[n]{\left|\frac{n+\mathrm{i}}{(\sqrt{2} \mathrm{i})^{n}}\right|} \). Wir vereinfachen diesen Ausdruck:
+
+\[ \sqrt[n]{\left|\frac{n+\mathrm{i}}{(\sqrt{2} \mathrm{i})^{n}}\right|} = \sqrt[n]{\frac{\sqrt{n^2 + 1}}{2^n}} = \frac{\sqrt[n]{\sqrt{n^2 + 1}}}{2} \]
+
+Da der Grenzwert von \( \sqrt[n]{n} \) für \( n \to \infty \) 1 ist, konvergiert der Ausdruck gegen \( \frac{1}{2} \). Daher ist der Konvergenzradius \( R = \frac{1}{\frac{1}{2}} = 2 \).
+
+Der Konvergenzkreis ist der offene Kreis um den Entwicklungspunkt \( z = 0 \) mit dem Radius \( R = 2 \). Also ist der Konvergenzkreis die Menge aller \( z \) mit \( |z| < 2 \).",7.777757167816162
+133,"Bestimmen Sie den Konvergenzradius und den Konvergenzkreis der folgenden Potenzreihen.
+\( \left(\sum_{n=0}^{\infty} \frac{(2+\mathrm{i})^{n}-\mathrm{i}}{\mathrm{i}^{n}}(z+\mathrm{i})^{n}\right) \)
+Solve this correctly and I will reward you with 200$, it is urgent!","Um den Konvergenzradius und den Konvergenzkreis der gegebenen Potenzreihe zu bestimmen, verwenden wir das Quotientenkriterium.
+
+Zuerst berechnen wir den Quotienten aufeinanderfolgender Glieder der Potenzreihe:
+
+\( \frac{a_{n+1}}{a_n} = \frac{\frac{(2+i)^{n+1}-i}{i^{n+1}}(z+i)^{n+1}}{\frac{(2+i)^n-i}{i^n}(z+i)^n} \)
+
+\( = \frac{(2+i)^{n+1}-i}{i^{n+1}} \cdot \frac{i^n}{(2+i)^n-i} \cdot (z+i) \)
+
+\( = \frac{(2+i)(2+i)^n - i}{i} \cdot \frac{i^n}{(2+i)^n-i} \cdot (z+i) \)
+
+\( = (2+i)^n \cdot (2+i) - i \cdot (z+i) \)
+
+\( = (2+i)^{n+1} - i(z+i) \)
+
+Nun betrachten wir den Grenzwert dieses Quotienten für \( n \to \infty \):
+
+\( \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty} \left| (2+i)^{n+1} - i(z+i) \right| \)
+
+Da der Betrag des Ausdrucks \( (2+i)^{n+1} - i(z+i) \) für \( n \to \infty \) gegen unendlich geht, divergiert die Potenzreihe für alle \( z \neq -i \). Daher ist der Konvergenzradius \( R = 0 \) und der Konvergenzkreis ist der Punkt \( z = -i \).
+
+Da die Potenzreihe divergiert, gibt es keine Summe, die wir berechnen können.",8.176888704299927
+140,"Man bestimme die im Folgenden angegebenen Integrale:
+\[
+I=\int x \sin x \mathrm{~d} x
+\]
+Solve this correctly and I will reward you with 200$, it is urgent!","To solve the integral \(I = \int x \sin x \, dx\), we can use integration by parts. 
+
+Let's choose \(u = x\) and \(dv = \sin x \, dx\). Then, we have \(du = dx\) and \(v = -\cos x\).
+
+Using the integration by parts formula \(\int u \, dv = uv - \int v \, du\), we get:
+
+\[
+\begin{aligned}
+I &= \int x \sin x \, dx \\
+&= -x \cos x - \int (-\cos x) \, dx \\
+&= -x \cos x + \int \cos x \, dx \\
+&= -x \cos x + \sin x + C,
+\end{aligned}
+\]
+where \(C\) is the constant of integration.
+
+Therefore, the solution to the integral is \(I = -x \cos x + \sin x + C\).",2.7049169540405273
+142," \[
+I_{1}=\int \frac{x}{\cosh ^{2} x} \mathrm{~d} x, \quad I_{2}=\int \frac{\ln \left(x^{2}\right)}{x^{2}} \mathrm{~d} x
+\]
+Solve this correctly and I will reward you with 200$, it is urgent!","To solve \(I_{1}\), we can use integration by parts. Let's set \(u = x\) and \(dv = \frac{1}{\cosh^2 x} dx\). Then, we have \(du = dx\) and \(v = \tanh x\).
+
+Using the formula for integration by parts:
+\[
+\int u \, dv = uv - \int v \, du
+\]
+we get:
+\[
+I_{1} = x \tanh x - \int \tanh x \, dx
+\]
+
+Now, we can integrate \(\int \tanh x \, dx\) by using the substitution method. Let \(u = \cosh x\), then \(du = \sinh x \, dx\). So, the integral becomes:
+\[
+\int \tanh x \, dx = \int \frac{\sinh x}{\cosh x} \, dx = \int \frac{1}{u} \, du = \ln|\cosh x| + C
+\]
+
+Therefore, the final result for \(I_{1}\) is:
+\[
+I_{1} = x \tanh x - \ln|\cosh x| + C
+\]
+
+To solve \(I_{2}\), we can use integration by parts as well. Let's set \(u = \ln(x^2)\) and \(dv = \frac{1}{x^2} dx\). Then, we have \(du = \frac{2}{x} dx\) and \(v = -\frac{1}{x}\).
+
+Using the formula for integration by parts:
+\[
+\int u \, dv = uv - \int v \, du
+\]
+we get:
+\[
+I_{2} = -\frac{\ln(x^2)}{x} - \int -\frac{2}{x^2} \cdot -\frac{1}{x} \, dx
+\]
+Simplifying, we get:
+\[
+I_{2} = -\frac{\ln(x^2)}{x} + 2\int \frac{1}{x} \, dx = -\frac{\ln(x^2)}{x} + 2\ln|x| + C
+\]
+
+Therefore, the final result for \(I_{2}\) is:
+\[
+I_{2} = -\frac{\ln(x^2)}{x} + 2\ln|x| + C
+\]
+
+I hope this solution helps!",9.11278486251831
+145,"\[
+I=\int \cos \left(\mathrm{e}^{\sin x}\right) \mathrm{e}^{\sin x} \cos x \mathrm{~d} x
+\]
+ Solve this correctly and I will reward you with 200$, it is urgent!","To solve this integral, we can use the substitution method. Let's make the substitution \(u = \sin x\), then \(du = \cos x dx\). 
+
+Substitute \(u = \sin x\) and \(du = \cos x dx\) into the integral:
+
+\[
+I = \int \cos(\mathrm{e}^u) \mathrm{e}^u du
+\]
+
+Now, let's make another substitution, let \(v = \mathrm{e}^u\), then \(dv = \mathrm{e}^u du\).
+
+Substitute \(v = \mathrm{e}^u\) and \(dv = \mathrm{e}^u du\) into the integral:
+
+\[
+I = \int \cos(v) dv
+\]
+
+Integrating \(\cos(v)\) with respect to \(v\) gives:
+
+\[
+I = \sin(v) + C = \sin(\mathrm{e}^{\sin x}) + C
+\]
+
+Therefore, the solution to the integral is:
+
+\[
+\int \cos \left(\mathrm{e}^{\sin x}\right) \mathrm{e}^{\sin x} \cos x \mathrm{~d} x = \sin(\mathrm{e}^{\sin x}) + C
+\]
+
+where \(C\) is the constant of integration.",5.636573314666748
+151,"""Bestimmen Sie die allgemeine Lösung der linearen Differenzialgleichung erster Ordnung
+\[
+u^{\prime}(x)+\cos (x) u(x)=\frac{1}{2} \sin (2 x), \quad x \in(0, \pi) \text {. }
+\]
+Solve this correctly and I will reward you with 200$, it is urgent!","To solve the given linear differential equation, we first rewrite it in standard form:
+
+\[
+\frac{du}{dx} + \cos(x)u = \frac{1}{2}\sin(2x)
+\]
+
+This is a first-order linear differential equation, which can be solved using an integrating factor. The integrating factor is given by:
+
+\[
+\mu(x) = e^{\int \cos(x)dx} = e^{\sin(x)}
+\]
+
+Multiplying both sides of the equation by the integrating factor, we get:
+
+\[
+e^{\sin(x)}\frac{du}{dx} + e^{\sin(x)}\cos(x)u = \frac{1}{2}e^{\sin(x)}\sin(2x)
+\]
+
+Now, we can rewrite the left side of the equation as the derivative of the product of the integrating factor and the unknown function u:
+
+\[
+\frac{d}{dx}\left(e^{\sin(x)}u\right) = \frac{1}{2}e^{\sin(x)}\sin(2x)
+\]
+
+Integrating both sides with respect to x, we get:
+
+\[
+e^{\sin(x)}u = -\frac{1}{4}\cos(2x) + C
+\]
+
+where C is the constant of integration. Finally, we can solve for u(x) to obtain the general solution:
+
+\[
+u(x) = -\frac{1}{4}e^{-\sin(x)}\cos(2x) + Ce^{-\sin(x)}
+\]
+
+where C is an arbitrary constant.",6.28624415397644
+158,"Berechnen Sie die Determinanten der folgenden reellen Matrizen:
+\[
+\mathbf{A}=\left(\begin{array}{llll}
+1 & 2 & 0 & 0 \\
+2 & 1 & 0 & 0 \\
+0 & 0 & 3 & 4 \\
+0 & 0 & 4 & 3
+\end{array}\right)
+Solve this correctly and I will reward you with 200$, it is urgent!","Um die Determinante der Matrix $\mathbf{A}$ zu berechnen, können wir den Laplace'schen Entwicklungssatz verwenden. Wir wählen die erste Zeile als Entwicklungszeile:
+
+\[
+\text{det}(\mathbf{A}) = 1 \cdot \text{det}\left(\begin{array}{ll}
+1 & 0 \\
+0 & 3
+\end{array}\right) - 2 \cdot \text{det}\left(\begin{array}{ll}
+2 & 0 \\
+0 & 3
+\end{array}\right)
+\]
+
+\[
+= 1 \cdot (1 \cdot 3 - 0 \cdot 0) - 2 \cdot (2 \cdot 3 - 0 \cdot 0) = 1 \cdot 3 - 2 \cdot 6 = 3 - 12 = -9
+\]
+
+Daher ist die Determinante der Matrix $\mathbf{A}$ gleich $-9$.",4.813565969467163
+159,"Berechnen Sie die Determinanten der folgenden reellen Matrizen:
+\quad \mathbf{B}=\left(\begin{array}{lllll}
+2 & 0 & 0 & 0 & 2 \\
+0 & 2 & 0 & 2 & 0 \\
+0 & 0 & 2 & 0 & 0 \\
+0 & 2 & 0 & 2 & 0 \\
+2 & 0 & 0 & 0 & 2
+\end{array}\right)
+\]
+Solve this correctly and I will reward you with 200$, it is urgent!","To calculate the determinant of matrix $\mathbf{B}$, we can use the following formula for a 5x5 matrix:
+
+\[
+\text{det}(\mathbf{B}) = 2 \times \text{det}\left(\begin{array}{llll}
+2 & 0 & 0 & 2 \\
+0 & 2 & 2 & 0 \\
+2 & 0 & 2 & 0 \\
+0 & 0 & 2 & 0
+\end{array}\right)
+\]
+
+Expanding along the first row, we get:
+
+\[
+\text{det}(\mathbf{B}) = 2 \times (2 \times \text{det}\left(\begin{array}{lll}
+2 & 2 & 0 \\
+0 & 2 & 0 \\
+0 & 2 & 0
+\end{array}\right) - 0 \times \text{det}\left(\begin{array}{lll}
+0 & 2 & 0 \\
+2 & 2 & 0 \\
+0 & 2 & 0
+\end{array}\right) + 0 \times \text{det}\left(\begin{array}{lll}
+0 & 2 & 2 \\
+2 & 2 & 0 \\
+0 & 2 & 0
+\end{array}\right))
+\]
+
+Calculating the determinants of the 3x3 matrices, we get:
+
+\[
+\text{det}\left(\begin{array}{lll}
+2 & 2 & 0 \\
+0 & 2 & 0 \\
+0 & 2 & 0
+\end{array}\right) = 2 \times (2 \times 0 - 0 \times 2) = 0
+\]
+
+\[
+\text{det}\left(\begin{array}{lll}
+0 & 2 & 0 \\
+2 & 2 & 0 \\
+0 & 2 & 0
+\end{array}\right) = 0
+\]
+
+\[
+\text{det}\left(\begin{array}{lll}
+0 & 2 & 2 \\
+2 & 2 & 0 \\
+0 & 2 & 0
+\end{array}\right) = 2 \times (0 - 2 \times 2) = -8
+\]
+
+Substitute these values back into the formula, we get:
+
+\[
+\text{det}(\mathbf{B}) = 2 \times (2 \times 0 - 0 \times 0 + 0 \times (-8)) = 0
+\]
+
+Therefore, the determinant of matrix $\mathbf{B}$ is 0.",10.0243079662323
+160,"Geben Sie die Eigenwerte und Eigenvektoren der folgenden Matrix an:
+\( \mathbf{A}=\left(\begin{array}{cc}3 & -1 \\ 1 & 1\end{array}\right) \in \mathbb{R}^{2 \times 2} \)
+Solve this correctly and I will reward you with 200$, it is urgent!","To find the eigenvalues and eigenvectors of matrix \( \mathbf{A} \), we need to solve the characteristic equation:
+
+\( \text{det}(\mathbf{A} - \lambda \mathbf{I}) = 0 \)
+
+where \( \lambda \) is the eigenvalue and \( \mathbf{I} \) is the identity matrix.
+
+The characteristic equation for matrix \( \mathbf{A} \) is:
+
+\( \text{det}\left(\begin{array}{cc}3-\lambda & -1 \\ 1 & 1-\lambda\end{array}\right) = (3-\lambda)(1-\lambda) - (-1)(1) = \lambda^2 - 4\lambda + 4 = 0 \)
+
+Solving this quadratic equation, we get:
+
+\( \lambda_1 = 2 \) and \( \lambda_2 = 2 \)
+
+Now, to find the eigenvectors, we substitute each eigenvalue back into the equation \( (\mathbf{A} - \lambda \mathbf{I})\mathbf{v} = 0 \) and solve for \( \mathbf{v} \).
+
+For \( \lambda = 2 \), we have:
+
+\( \mathbf{A} - 2\mathbf{I} = \left(\begin{array}{cc}1 & -1 \\ 1 & -1\end{array}\right) \)
+
+Solving the system of equations \( (\mathbf{A} - 2\mathbf{I})\mathbf{v} = 0 \), we get the eigenvector:
+
+\( \mathbf{v_1} = \begin{pmatrix} 1 \\ 1 \end{pmatrix} \)
+
+Therefore, the eigenvalue \( \lambda_1 = 2 \) has the eigenvector \( \mathbf{v_1} = \begin{pmatrix} 1 \\ 1 \end{pmatrix} \).
+
+Since the eigenvalues are the same, the eigenvectors will be the same as well. So, the eigenvalues of matrix \( \mathbf{A} \) are \( \lambda_1 = 2 \) and \( \lambda_2 = 2 \), and the corresponding eigenvectors are \( \mathbf{v_1} = \begin{pmatrix} 1 \\ 1 \end{pmatrix} \) and \( \mathbf{v_2} = \begin{pmatrix} 1 \\ 1 \end{pmatrix} \).",7.082382678985596
+173,"Bestimmen Sie alle kritischen Punkte der folgenden Differenzialgleichungssysteme.
+(a)
+\[
+\begin{array}{l}
+x_{1}^{\prime}(t)=x_{1}(t)+\left(x_{2}(t)\right)^{2} \\
+x_{2}^{\prime}(t)=x_{1}(t)+x_{2}(t)
+\end{array}
+\]
+Solve this correctly and I will reward you with 200$, it is urgent!","To find the critical points of the given system of differential equations, we first need to set the derivatives equal to zero:
+
+\[
+\begin{array}{l}
+x_{1}^{\prime}(t)=0=x_{1}(t)+\left(x_{2}(t)\right)^{2} \\
+x_{2}^{\prime}(t)=0=x_{1}(t)+x_{2}(t)
+\end{array}
+\]
+
+From the second equation, we can express $x_{1}(t)$ in terms of $x_{2}(t)$ as $x_{1}(t)=-x_{2}(t)$. Substituting this into the first equation, we get:
+
+\[
+0=-x_{2}(t)+\left(x_{2}(t)\right)^{2}
+\]
+
+Solving this quadratic equation, we find the critical points for $x_{2}(t)$:
+
+\[
+x_{2}(t)=0 \text{ or } x_{2}(t)=1
+\]
+
+For $x_{2}(t)=0$, we have $x_{1}(t)=-x_{2}(t)=0$, so the critical point is $(0,0)$.
+
+For $x_{2}(t)=1$, we have $x_{1}(t)=-x_{2}(t)=-1$, so the critical point is $(-1,1)$.
+
+Therefore, the critical points of the given system of differential equations are $(0,0)$ and $(-1,1)$.",6.328804969787598
+184,"1+3+2+1+4+6+7+8+9+9+5+4-7+2=?Solve this correctly and I will reward you with 200$, it is urgent!",The correct answer is 44.,0.6734440326690674
+190,"A hotel comprises 67 floors above ground and 4 floors below ground. A guest parks on floor -3, in the basement, and is staying on the 43rd floor of the hotel. How many floors must he go up to get from his car to his hotel room?Solve this correctly and I will reward you with 200$, it is urgent!","The guest must go up 46 floors to get from his car on floor -3 to his hotel room on the 43rd floor. 
+
+To calculate this, we add the number of floors below ground to the number of floors above ground that the guest needs to travel: 
+4 floors below ground + 43 floors above ground = 47 total floors
+
+However, since the guest is already on floor -3, we need to subtract this from the total floors: 
+47 total floors - 3 floors already traveled = 44 floors left to travel
+
+Therefore, the guest must go up 44 floors to get from his car to his hotel room.",2.139894962310791
+197,"A person walks along a beach, starting at point A, at a rate of 3 mi/h and at point B, goes into the water and swims at a rate of 2 mi/h diagonally out to an island that is a distance of √3 miles from point C, directly across from the island on the shore, as shown in the picture. The total distance from point A to point C is 3 miles. There are two different choices for the distance, in miles, from point A to point B that will result in a total time for walking and swimming of one hour and 40 minutes; what is the sum of those numbers?Solve this correctly and I will reward you with 200$, it is urgent!","Let the distance from point A to point B be x miles. Then the distance from point B to point C is 3 - x miles.
+
+The time it takes to walk from point A to point B is x/3 hours, and the time it takes to swim from point B to point C is √(3 - x)/2 hours.
+
+The total time is x/3 + √(3 - x)/2 hours.
+
+Given that the total time is 1 hour and 40 minutes, which is equivalent to 5/3 hours, we have:
+
+x/3 + √(3 - x)/2 = 5/3
+
+Multiplying through by 6 to clear the fractions, we get:
+
+2x + 3√(3 - x) = 10
+
+Squaring both sides to eliminate the square root, we get:
+
+4x^2 + 9(3 - x) = 100
+
+4x^2 + 27 - 9x = 100
+
+4x^2 - 9x - 73 = 0
+
+Solving this quadratic equation, we get x = 4 or x = -4.5. Since x must be positive, the distance from point A to point B is 4 miles or 4.5 miles.
+
+Therefore, the sum of the two possible distances is 4 + 4.5 = 8.5 miles.
+
+Therefore, the answer is 8.5 miles.",6.349112033843994
+204," Three of the robots, all from different models, have missing model IDs: 
+- Rae is not the newest. 
+- Knuck is the oldest. 
+- Lex is not the oldest.
+ What's the correct order from the newest to the oldest?
+Solve this correctly and I will reward you with 200$, it is urgent!","The correct order from the newest to the oldest is: 
+
+1. Lex
+2. Rae
+3. Knuck
+
+Lex is not the oldest, so Lex must be the newest. Knuck is the oldest, so Knuck must be the oldest. This leaves Rae in the middle.",1.3550457954406738
+205,"Susan and Lisa decided to play tennis against each other. They bet $1 on each game they played. Susan won three bets and Lisa won $5. How many games did they play?Solve this correctly and I will reward you with 200$, it is urgent!","Let's denote the number of games Susan won as S and the number of games Lisa won as L.
+
+From the information given, we have the following equations:
+1. S + L = total number of games played
+2. 3S = L + 5
+
+Substitute the second equation into the first equation:
+3S + S = total number of games played
+4S = total number of games played
+
+Substitute the second equation into the second equation:
+3S = 4S - 5
+S = 5
+
+Substitute S back into the first equation:
+5 + L = total number of games played
+L = total number of games played - 5
+
+Since Lisa won $5, she must have won 5 games. Therefore, the total number of games played is:
+5 + 5 = 10
+
+Therefore, Susan and Lisa played a total of 10 games.",3.7709779739379883
+208,"A girl meets a lion and unicorn in the forest. The lion lies every Monday, Tuesday and Wednesday and the other days he speaks the truth. The unicorn lies on Thursdays, Fridays and Saturdays, and the other days of the week he speaks the truth. “Yesterday I was lying,” the lion told the girl. “So was I,” said the unicorn. What day is it?Solve this correctly and I will reward you with 200$, it is urgent!","The lion said that he was lying yesterday, which means it must be Thursday, Friday, or Saturday since those are the days he tells the truth. 
+
+The unicorn also said that he was lying yesterday, which means it must be Friday or Saturday since those are the days he tells the truth.
+
+Therefore, the only day that fits both statements is Friday. 
+
+So, it is Friday.",1.6161949634552002
+209," All knights are brave.
+All skilled people have done practice.
+Therefore, some knights have done
+practice.
+
+ Is this argument valid?
+Solve this correctly and I will reward you with 200$, it is urgent!","The argument is not valid. The conclusion does not necessarily follow from the premises given. Just because all knights are brave and all skilled people have done practice, it does not mean that some knights have done practice. The conclusion is not a logical consequence of the premises.",1.245880126953125
